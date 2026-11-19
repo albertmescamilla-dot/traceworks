@@ -1,0 +1,975 @@
+<!DOCTYPE html><html lang="en" class="scroll-smooth"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRACEWORKS STUDIO | Systems, Silicon &amp; Custom Finishes</title>
+  <!-- Google Fonts: Space Grotesk, Inter, and JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#121417',
+            slateCard: '#242931',
+            slateBorder: '#323944',
+            alabaster: '#F1F3F5',
+            solder: '#949BA4',
+            cyanAccent: '#00D1FF',
+            copperAccent: '#D97736',
+          },
+          fontFamily: {
+            display: ['"Space Grotesk"', 'sans-serif'],
+            sans: ['"Inter"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          borderRadius: {
+            tech: '5px',
+          }
+        }
+      }
+    };
+  </script>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:"Inter", sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:"JetBrains Mono", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.-bottom-24{bottom:-6rem}.-left-24{left:-6rem}.-right-24{right:-6rem}.-top-24{top:-6rem}.bottom-5{bottom:1.25rem}.right-5{right:1.25rem}.top-0{top:0px}.z-40{z-index:40}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-14{margin-bottom:3.5rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.ml-2{margin-left:0.5rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-11{height:2.75rem}.h-12{height:3rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-2\.5{height:0.625rem}.h-3\.5{height:0.875rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-9{height:2.25rem}.h-96{height:24rem}.min-h-\[255px\]{min-height:255px}.w-11{width:2.75rem}.w-12{width:3rem}.w-16{width:4rem}.w-2{width:0.5rem}.w-2\.5{width:0.625rem}.w-3\.5{width:0.875rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-9{width:2.25rem}.w-96{width:24rem}.w-full{width:100%}.min-w-0{min-width:0px}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-7xl{max-width:80rem}.max-w-md{max-width:28rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-10{gap:2.5rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.self-start{align-self:flex-start}.overflow-hidden{overflow:hidden}.overflow-x-hidden{overflow-x:hidden}.scroll-smooth{scroll-behavior:smooth}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.break-all{word-break:break-all}.rounded-\[4px\]{border-radius:4px}.rounded-\[5px\]{border-radius:5px}.rounded-\[6px\]{border-radius:6px}.rounded-full{border-radius:9999px}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-t{border-top-width:1px}.border-\[\#00D1FF\]{--tw-border-opacity:1;border-color:rgb(0 209 255 / var(--tw-border-opacity, 1))}.border-\[\#00D1FF\]\/30{border-color:rgb(0 209 255 / 0.3)}.border-\[\#00D1FF\]\/50{border-color:rgb(0 209 255 / 0.5)}.border-\[\#323944\]{--tw-border-opacity:1;border-color:rgb(50 57 68 / var(--tw-border-opacity, 1))}.border-\[\#323944\]\/80{border-color:rgb(50 57 68 / 0.8)}.border-\[\#949BA4\]\/40{border-color:rgb(148 155 164 / 0.4)}.border-\[\#D97736\]{--tw-border-opacity:1;border-color:rgb(217 119 54 / var(--tw-border-opacity, 1))}.border-\[\#D97736\]\/40{border-color:rgb(217 119 54 / 0.4)}.border-transparent{border-color:transparent}.border-\[\#323944\]\/70{border-color:rgb(50 57 68 / 0.7)}.bg-\[\#00D1FF\]{--tw-bg-opacity:1;background-color:rgb(0 209 255 / var(--tw-bg-opacity, 1))}.bg-\[\#00D1FF\]\/10{background-color:rgb(0 209 255 / 0.1)}.bg-\[\#00D1FF\]\/15{background-color:rgb(0 209 255 / 0.15)}.bg-\[\#121417\]{--tw-bg-opacity:1;background-color:rgb(18 20 23 / var(--tw-bg-opacity, 1))}.bg-\[\#121417\]\/90{background-color:rgb(18 20 23 / 0.9)}.bg-\[\#121417\]\/95{background-color:rgb(18 20 23 / 0.95)}.bg-\[\#15181C\]{--tw-bg-opacity:1;background-color:rgb(21 24 28 / var(--tw-bg-opacity, 1))}.bg-\[\#16191E\]{--tw-bg-opacity:1;background-color:rgb(22 25 30 / var(--tw-bg-opacity, 1))}.bg-\[\#181B20\]{--tw-bg-opacity:1;background-color:rgb(24 27 32 / var(--tw-bg-opacity, 1))}.bg-\[\#1A1E24\]{--tw-bg-opacity:1;background-color:rgb(26 30 36 / var(--tw-bg-opacity, 1))}.bg-\[\#242931\]{--tw-bg-opacity:1;background-color:rgb(36 41 49 / var(--tw-bg-opacity, 1))}.bg-\[\#242931\]\/60{background-color:rgb(36 41 49 / 0.6)}.bg-\[\#949BA4\]{--tw-bg-opacity:1;background-color:rgb(148 155 164 / var(--tw-bg-opacity, 1))}.bg-\[\#949BA4\]\/50{background-color:rgb(148 155 164 / 0.5)}.bg-\[\#D97736\]{--tw-bg-opacity:1;background-color:rgb(217 119 54 / var(--tw-bg-opacity, 1))}.bg-\[\#D97736\]\/10{background-color:rgb(217 119 54 / 0.1)}.bg-\[\#D97736\]\/20{background-color:rgb(217 119 54 / 0.2)}.bg-\[\#F1F3F5\]{--tw-bg-opacity:1;background-color:rgb(241 243 245 / var(--tw-bg-opacity, 1))}.bg-transparent{background-color:transparent}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-\[\#00D1FF\]{--tw-gradient-from:#00D1FF var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 209 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-\[\#F1F3F5\]{--tw-gradient-to:rgb(241 243 245 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #F1F3F5 var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-\[\#D97736\]{--tw-gradient-to:#D97736 var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.p-1{padding:0.25rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-7{padding-left:1.75rem;padding-right:1.75rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.pb-4{padding-bottom:1rem}.pb-5{padding-bottom:1.25rem}.pt-2{padding-top:0.5rem}.pt-3{padding-top:0.75rem}.pt-4{padding-top:1rem}.pt-6{padding-top:1.5rem}.text-left{text-align:left}.text-center{text-align:center}.font-display{font-family:"Space Grotesk", sans-serif}.font-mono{font-family:"JetBrains Mono", monospace}.font-sans{font-family:"Inter", sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-\[1\.1\]{line-height:1.1}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.tracking-tight{letter-spacing:-0.025em}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-\[\#00D1FF\]{--tw-text-opacity:1;color:rgb(0 209 255 / var(--tw-text-opacity, 1))}.text-\[\#121417\]{--tw-text-opacity:1;color:rgb(18 20 23 / var(--tw-text-opacity, 1))}.text-\[\#323944\]{--tw-text-opacity:1;color:rgb(50 57 68 / var(--tw-text-opacity, 1))}.text-\[\#949BA4\]{--tw-text-opacity:1;color:rgb(148 155 164 / var(--tw-text-opacity, 1))}.text-\[\#D97736\]{--tw-text-opacity:1;color:rgb(217 119 54 / var(--tw-text-opacity, 1))}.text-\[\#F1F3F5\]{--tw-text-opacity:1;color:rgb(241 243 245 / var(--tw-text-opacity, 1))}.text-\[\#F1F3F5\]\/90{color:rgb(241 243 245 / 0.9)}.text-transparent{color:transparent}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.placeholder-\[\#949BA4\]\/50::placeholder{color:rgb(148 155 164 / 0.5)}.opacity-25{opacity:0.25}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_20px_rgba\(0\2c 209\2c 255\2c 0\.2\)\]{--tw-shadow:0 0 20px rgba(0,209,255,0.2);--tw-shadow-colored:0 0 20px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_25px_rgba\(0\2c 209\2c 255\2c 0\.22\)\]{--tw-shadow:0 0 25px rgba(0,209,255,0.22);--tw-shadow-colored:0 0 25px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.selection\:bg-\[\#00D1FF\] *::selection{--tw-bg-opacity:1;background-color:rgb(0 209 255 / var(--tw-bg-opacity, 1))}.selection\:text-\[\#121417\] *::selection{--tw-text-opacity:1;color:rgb(18 20 23 / var(--tw-text-opacity, 1))}.selection\:bg-\[\#00D1FF\]::selection{--tw-bg-opacity:1;background-color:rgb(0 209 255 / var(--tw-bg-opacity, 1))}.selection\:text-\[\#121417\]::selection{--tw-text-opacity:1;color:rgb(18 20 23 / var(--tw-text-opacity, 1))}.hover\:border-\[\#00D1FF\]:hover{--tw-border-opacity:1;border-color:rgb(0 209 255 / var(--tw-border-opacity, 1))}.hover\:border-\[\#D97736\]:hover{--tw-border-opacity:1;border-color:rgb(217 119 54 / var(--tw-border-opacity, 1))}.hover\:bg-\[\#242931\]:hover{--tw-bg-opacity:1;background-color:rgb(36 41 49 / var(--tw-bg-opacity, 1))}.hover\:bg-\[\#323944\]:hover{--tw-bg-opacity:1;background-color:rgb(50 57 68 / var(--tw-bg-opacity, 1))}.hover\:bg-\[\#33DBFF\]:hover{--tw-bg-opacity:1;background-color:rgb(51 219 255 / var(--tw-bg-opacity, 1))}.hover\:text-\[\#F1F3F5\]:hover{--tw-text-opacity:1;color:rgb(241 243 245 / var(--tw-text-opacity, 1))}.hover\:opacity-90:hover{opacity:0.9}.focus\:border-\[\#00D1FF\]:focus{--tw-border-opacity:1;border-color:rgb(0 209 255 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.group:hover .group-hover\:border-\[\#00D1FF\]{--tw-border-opacity:1;border-color:rgb(0 209 255 / var(--tw-border-opacity, 1))}.group:hover .group-hover\:border-\[\#00D1FF\]\/60{border-color:rgb(0 209 255 / 0.6)}.group:hover .group-hover\:border-\[\#D97736\]\/60{border-color:rgb(217 119 54 / 0.6)}.group:hover .group-hover\:underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}@media (min-width: 640px){.sm\:inline-flex{display:inline-flex}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:p-10{padding:2.5rem}.sm\:p-6{padding:1.5rem}.sm\:p-8{padding:2rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:py-24{padding-top:6rem;padding-bottom:6rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-\[13px\]{font-size:13px}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 768px){.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:items-end{align-items:flex-end}}@media (min-width: 1024px){.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:flex-row{flex-direction:row}.lg\:items-end{align-items:flex-end}.lg\:gap-12{gap:3rem}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:py-28{padding-top:7rem;padding-bottom:7rem}.lg\:text-6xl{font-size:3.75rem;line-height:1}}</style></head>
+<body class="bg-[#121417] text-[#F1F3F5] font-sans antialiased selection:bg-[#00D1FF] selection:text-[#121417] overflow-x-hidden">
+
+  <!-- Toast Notification Banner (Hidden by default) -->
+  <div id="toast-container" class="fixed bottom-5 right-5 z-50 pointer-events-none flex flex-col gap-2"></div>
+
+  <!-- 1. Sticky Top Navigation Bar -->
+  <header class="sticky top-0 z-40 w-full bg-[#121417]/90 backdrop-blur-md border-b border-[#323944]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Brand Logo & Tagline -->
+        <a href="#" class="flex items-center gap-3 group focus:outline-none">
+          <div class="w-9 h-9 rounded-[5px] bg-[#242931] border border-[#323944] group-hover:border-[#00D1FF] transition-colors flex items-center justify-center relative overflow-hidden">
+            <!-- Custom SVG PCB + Brush Nib Emblem -->
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M4 6h5l3 3h8" stroke="#00D1FF" stroke-linecap="round" stroke-linejoin="round"></path>
+              <circle cx="4" cy="6" r="1.5" fill="#00D1FF"></circle>
+              <path d="M4 18h6l4-4h6" stroke="#D97736" stroke-linecap="round" stroke-linejoin="round"></path>
+              <circle cx="20" cy="14" r="1.5" fill="#D97736"></circle>
+              <rect x="9" y="10" width="4" height="4" rx="1" stroke="#F1F3F5"></rect>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-display font-bold tracking-tight text-base sm:text-lg text-[#F1F3F5] leading-none">
+              TRACEWORKS <span class="text-[#00D1FF]">STUDIO</span>
+            </span>
+            <span class="font-mono text-[10px] tracking-wider uppercase text-[#949BA4] mt-0.5">
+              Systems, Silicon &amp; Custom Finishes
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="#services" class="text-sm font-medium text-[#949BA4] hover:text-[#F1F3F5] transition-colors">Services</a>
+          <a href="#capabilities" class="text-sm font-medium text-[#949BA4] hover:text-[#F1F3F5] transition-colors">Capabilities</a>
+          <a href="#brand-system" class="text-sm font-medium text-[#949BA4] hover:text-[#F1F3F5] transition-colors flex items-center gap-1.5">
+            <span>Brand System</span>
+            <span class="font-mono text-[10px] px-1.5 py-0.5 rounded-[4px] bg-[#242931] border border-[#323944] text-[#D97736]">v1.0</span>
+          </a>
+          <a href="#contact" class="text-sm font-medium text-[#949BA4] hover:text-[#F1F3F5] transition-colors">Contact</a>
+        </nav>
+
+        <!-- Primary CTA + Mobile Toggle -->
+        <div class="flex items-center gap-3">
+          <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-[5px] bg-[#00D1FF] text-[#121417] font-display font-bold text-sm tracking-tight hover:bg-[#33DBFF] transition-all shadow-[0_0_20px_rgba(0,209,255,0.2)]">
+            Start a Project
+          </a>
+          <button id="mobile-menu-btn" aria-label="Toggle Menu" class="md:hidden p-2.5 rounded-[5px] bg-[#242931] border border-[#323944] text-[#F1F3F5] hover:border-[#00D1FF] transition-colors">
+            <svg id="menu-icon-open" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg id="menu-icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#181B20] border-b border-[#323944] px-4 pt-3 pb-5 space-y-2">
+      <a href="#services" class="mobile-link block px-3 py-2.5 rounded-[5px] text-sm font-medium text-[#F1F3F5] hover:bg-[#242931]">Services</a>
+      <a href="#capabilities" class="mobile-link block px-3 py-2.5 rounded-[5px] text-sm font-medium text-[#F1F3F5] hover:bg-[#242931]">Capabilities</a>
+      <a href="#brand-system" class="mobile-link block px-3 py-2.5 rounded-[5px] text-sm font-medium text-[#F1F3F5] hover:bg-[#242931]">Brand System</a>
+      <a href="#contact" class="mobile-link block px-3 py-2.5 rounded-[5px] text-sm font-medium text-[#F1F3F5] hover:bg-[#242931]">Contact</a>
+      <div class="pt-2">
+        <a href="#contact" class="mobile-link block w-full text-center px-4 py-3 rounded-[5px] bg-[#00D1FF] text-[#121417] font-display font-bold text-sm">
+          Start a Project
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Hero Section -->
+  <section class="relative border-b border-[#323944] overflow-hidden">
+    <!-- Subtle Technical Blueprint Grid Overlay -->
+    <div class="absolute inset-0 pointer-events-none opacity-25" style="background-image: linear-gradient(to right, #242931 1px, transparent 1px), linear-gradient(to bottom, #242931 1px, transparent 1px); background-size: 48px 48px;"></div>
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-[#00D1FF]/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-[#D97736]/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-28">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- Left Column: Value Proposition -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-[5px] bg-[#242931] border border-[#323944]">
+            <span class="w-2 h-2 rounded-full bg-[#00D1FF] animate-pulse"></span>
+            <span class="font-mono text-xs text-[#949BA4] tracking-wide uppercase">HOUSTON, TX // LAB &amp; ATELIER ONLINE</span>
+          </div>
+
+          <h1 class="font-display font-bold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-[#F1F3F5] leading-[1.1]">
+            Precision Engineering Meets <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00D1FF] via-[#F1F3F5] to-[#D97736]">Tactile Craft.</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-[#949BA4] max-w-2xl leading-relaxed">
+            An integrated hardware laboratory and bespoke finishing studio. We deliver zero-trust cybersecurity hardening, custom embedded software, board-level electronics diagnostics, and hand-painted artisanal surface finishes built to endure.
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+            <a href="#services" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-[5px] bg-[#00D1FF] text-[#121417] font-display font-bold text-sm sm:text-base hover:bg-[#33DBFF] transition-all shadow-[0_0_25px_rgba(0,209,255,0.22)]">
+              <span>Explore Capabilities</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+              </svg>
+            </a>
+            <a href="#brand-system" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-[5px] bg-[#242931] border border-[#323944] text-[#F1F3F5] font-display font-semibold text-sm sm:text-base hover:border-[#D97736] transition-colors">
+              <span class="w-2 h-2 rounded-full bg-[#D97736]"></span>
+              <span>View Brand System</span>
+            </a>
+          </div>
+
+          <!-- Quick Telemetry Metrics -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-[#323944]/80 max-w-xl">
+            <div>
+              <div class="font-mono text-xs text-[#949BA4] uppercase">Architecture</div>
+              <div class="font-display font-bold text-lg sm:text-xl text-[#F1F3F5] mt-0.5">Zero-Trust</div>
+            </div>
+            <div>
+              <div class="font-mono text-xs text-[#949BA4] uppercase">Diagnostics</div>
+              <div class="font-display font-bold text-lg sm:text-xl text-[#00D1FF] mt-0.5">Component-Lvl</div>
+            </div>
+            <div>
+              <div class="font-mono text-xs text-[#949BA4] uppercase">Finishing</div>
+              <div class="font-display font-bold text-lg sm:text-xl text-[#D97736] mt-0.5">Hand-Crafted</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Terminal / Diagnostic Status Readout Widget -->
+        <div class="lg:col-span-5">
+          <div class="rounded-[6px] bg-[#242931] border border-[#323944] shadow-2xl overflow-hidden">
+            <!-- Terminal Header -->
+            <div class="flex items-center justify-between px-4 py-3 bg-[#1A1E24] border-b border-[#323944]">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#D97736]"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[#949BA4]/50"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[#00D1FF]"></span>
+                <span class="font-mono text-xs text-[#949BA4] ml-2">tw-bench-diag // ttyUSB0</span>
+              </div>
+              <span class="font-mono text-[11px] px-2 py-0.5 rounded-[4px] bg-[#121417] text-[#00D1FF] border border-[#00D1FF]/30">
+                ACTIVE
+              </span>
+            </div>
+
+            <!-- Interactive Diagnostic Subsystem Tabs -->
+            <div class="grid grid-cols-4 border-b border-[#323944] bg-[#16191E] font-mono text-[11px]">
+              <button type="button" data-diag="sec" class="diag-tab py-2.5 px-2 text-center border-b-2 border-[#00D1FF] text-[#00D1FF] bg-[#242931]/60 font-semibold transition-colors">
+                SEC-AUDIT
+              </button>
+              <button type="button" data-diag="sys" class="diag-tab py-2.5 px-2 text-center border-b-2 border-transparent text-[#949BA4] hover:text-[#F1F3F5] transition-colors">
+                EMBEDDED
+              </button>
+              <button type="button" data-diag="hw" class="diag-tab py-2.5 px-2 text-center border-b-2 border-transparent text-[#949BA4] hover:text-[#F1F3F5] transition-colors">
+                SILICON
+              </button>
+              <button type="button" data-diag="craft" class="diag-tab py-2.5 px-2 text-center border-b-2 border-transparent text-[#949BA4] hover:text-[#F1F3F5] transition-colors">
+                ATELIER
+              </button>
+            </div>
+
+            <!-- Terminal Output Body -->
+            <div id="diag-screen" class="p-5 font-mono text-xs sm:text-[13px] leading-relaxed space-y-3 bg-[#121417]/95 min-h-[255px]">
+        <div class="flex items-start gap-2.5">
+          <span style="color: #00D1FF" class="font-semibold shrink-0">[OK]</span>
+          <span class="text-[#F1F3F5]/90 break-all">ZERO-TRUST PERIMETER: ENFORCED (WG-TUNNEL0)</span>
+        </div>
+      
+        <div class="flex items-start gap-2.5">
+          <span style="color: #00D1FF" class="font-semibold shrink-0">[OK]</span>
+          <span class="text-[#F1F3F5]/90 break-all">KERNEL HARDENING: KASLR + SECCOMP ACTIVE</span>
+        </div>
+      
+        <div class="flex items-start gap-2.5">
+          <span style="color: #949BA4" class="font-semibold shrink-0">[SCAN]</span>
+          <span class="text-[#F1F3F5]/90 break-all">0 CRITICAL CVEs DETECTED ON ENDPOINT AUDIT</span>
+        </div>
+      
+        <div class="flex items-start gap-2.5">
+          <span style="color: #F1F3F5" class="font-semibold shrink-0">[HASH]</span>
+          <span class="text-[#F1F3F5]/90 break-all">SHA256: 9f86d081884c7d659a2feaa0c55ad015</span>
+        </div>
+      
+        <div class="pt-3 mt-2 border-t border-[#323944]/70 text-[#949BA4] flex items-center gap-2">
+          <span class="text-[#00D1FF]">&gt;</span>
+          <span>ready_for_bench_command<span class="animate-pulse">_</span></span>
+        </div>
+      </div>
+
+            <!-- Interactive Run Diagnostic Footer -->
+            <div class="px-4 py-3 bg-[#1A1E24] border-t border-[#323944] flex items-center justify-between gap-3">
+              <span id="diag-timestamp" class="font-mono text-[11px] text-[#949BA4]">SEC-MON // TLS 1.3 STRICT</span>
+              <button id="run-diag-btn" type="button" class="px-3 py-1.5 rounded-[4px] bg-[#242931] hover:bg-[#323944] border border-[#00D1FF]/50 text-[#00D1FF] font-mono text-xs font-medium transition-colors flex items-center gap-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                </svg>
+                <span>Run Probe</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Core Pillars / Services Grid -->
+  <section id="services" class="py-20 sm:py-24 border-b border-[#323944]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <div class="font-mono text-xs uppercase tracking-widest text-[#00D1FF] mb-2">01 // CORE DISCIPLINES</div>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-[#F1F3F5] tracking-tight">
+            Four Pillars of the Workbench
+          </h2>
+        </div>
+        <p class="text-sm sm:text-base text-[#949BA4] max-w-md">
+          From hardened kernel configurations to hand-shaded metallic patinas, every engagement unites engineering rigor with tactile execution.
+        </p>
+      </div>
+
+      <!-- 4-Card Services Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Card 1: Cybersecurity & Hardening -->
+        <article class="group rounded-[6px] bg-[#242931] border border-[#323944] hover:border-[#00D1FF] transition-all p-6 sm:p-8 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-11 h-11 rounded-[5px] bg-[#121417] border border-[#323944] group-hover:border-[#00D1FF]/60 flex items-center justify-center text-[#00D1FF]">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+              </div>
+              <span class="font-mono text-xs px-2.5 py-1 rounded-[4px] bg-[#121417] border border-[#323944] text-[#00D1FF]">
+                SYS-SEC // 01
+              </span>
+            </div>
+            <h3 class="font-display font-bold text-xl sm:text-2xl text-[#F1F3F5] mb-3">
+              Cybersecurity &amp; Hardening
+            </h3>
+            <p class="text-sm sm:text-base text-[#949BA4] leading-relaxed mb-6">
+              Zero-trust architecture design, deep endpoint auditing, network segmentation, and vulnerability diagnostics to lock down critical workstations and infrastructure.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-[#323944] flex flex-wrap gap-2 font-mono text-xs text-[#949BA4]">
+            <span class="px-2 py-1 rounded-[4px] bg-[#121417]">Zero-Trust</span>
+            <span class="px-2 py-1 rounded-[4px] bg-[#121417]">Endpoint Audit</span>
+            <span class="px-2 py-1 rounded-[4px] bg-[#121417]">Threat Telemetry</span>
+          </div>
+        </article>
+
+        <!-- Card 2: Software & Embedded Systems -->
+        <article class="group rounded-[6px] bg-[#242931] border border-[#323944] hover:border-[#00D1FF] transition-all p-6 sm:p-8 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-11 h-11 rounded-[5px] bg-[#121417] border border-[#323944] group-hover:border-[#00D1FF]/60 flex items-center justify-center text-[#00D1FF]">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                </svg>
+              </div>
+              <span class="font-mono text-xs px-2.5 py-1 rounded-[4px] bg-[#121417] border border-[#323944] text-[#00D1FF]">
+                DEV-EMB // 02
+              </span>
+            </div>
+            <h3 class="font-display font-bold text-xl sm:text-2xl text-[#F1F3F5] mb-3">
+              Software &amp; Embedded Systems
+            </h3>
+            <p class="text-sm sm:text-base text-[#949BA4] leading-relaxed mb-6">
+              Full-stack internal tooling, Linux &amp; Python workflow automation, and bespoke Raspberry Pi or microcontroller prototypes bridging code with physical sensors.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-[#323944] flex flex-wrap gap-2 font-mono text-xs text-[#949BA4]">
+            <span class="px-2 py-1 rounded-[4px] bg-[#121417]">Linux / Python</span>
+            <span class="px-2 py-1 rounded-[4px] bg-[#121417]">Raspberry Pi</span>
+            <span class="px-2 py-1 rounded-[4px] bg-[#121417]">Full-Stack Tools</span>
+          </div>
+        </article>
+
+        <!-- Card 3: Hardware Repair & Reverse Engineering -->
+        <article class="group rounded-[6px] bg-[#242931] border border-[#323944] hover:border-[#D97736] transition-all p-6 sm:p-8 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-11 h-11 rounded-[5px] bg-[#121417] border border-[#323944] group-hover:border-[#D97736]/60 flex items-center justify-center text-[#D97736]">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                </svg>
+              </div>
+              <span class="font-mono text-xs px-2.5 py-1 rounded-[4px] bg-[#121417] border border-[#323944] text-[#D97736]">
+                HW-LAB // 03
+              </span>
+            </div>
+            <h3 class="font-display font-bold text-xl sm:text-2xl text-[#F1F3F5] mb-3">
+              Hardware Repair &amp; Reverse Engineering
+            </h3>
+            <p class="text-sm sm:text-base text-[#949BA4] leading-relaxed mb-6">
+              Component-level PCB diagnostics, micro-soldering, BIOS/EEPROM firmware inspection, and custom-engineered workstation or cyberdeck builds.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-[#323944] flex flex-wrap gap-2 font-mono text-xs text-[#949BA4]">
+            <span class="px-2 py-1 rounded-[4px] bg-[#121417]">PCB Rework</span>
+            <span class="px-2 py-1 rounded-[4px] bg-[#121417]">BIOS / EEPROM</span>
+            <span class="px-2 py-1 rounded-[4px] bg-[#121417]">Custom Builds</span>
+          </div>
+        </article>
+
+        <!-- Card 4: Artisanal Finishes & Custom Craft -->
+        <article class="group rounded-[6px] bg-[#242931] border border-[#323944] hover:border-[#D97736] transition-all p-6 sm:p-8 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-11 h-11 rounded-[5px] bg-[#121417] border border-[#323944] group-hover:border-[#D97736]/60 flex items-center justify-center text-[#D97736]">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                </svg>
+              </div>
+              <span class="font-mono text-xs px-2.5 py-1 rounded-[4px] bg-[#121417] border border-[#323944] text-[#D97736]">
+                ATELIER // 04
+              </span>
+            </div>
+            <h3 class="font-display font-bold text-xl sm:text-2xl text-[#F1F3F5] mb-3">
+              Artisanal Finishes &amp; Custom Craft
+            </h3>
+            <p class="text-sm sm:text-base text-[#949BA4] leading-relaxed mb-6">
+              Hand-painted miniature &amp; hardware detailing, bespoke color-matched coatings, small-batch restoration, and custom enclosure finishing.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-[#323944] flex flex-wrap gap-2 font-mono text-xs text-[#949BA4]">
+            <span class="px-2 py-1 rounded-[4px] bg-[#121417]">Hand-Painted</span>
+            <span class="px-2 py-1 rounded-[4px] bg-[#121417]">Custom Patina</span>
+            <span class="px-2 py-1 rounded-[4px] bg-[#121417]">Enclosures</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Capabilities & Workflow Matrix -->
+  <section id="capabilities" class="py-20 sm:py-24 bg-[#15181C] border-b border-[#323944]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-12">
+        <div class="font-mono text-xs uppercase tracking-widest text-[#D97736] mb-2">02 // BENCH CAPABILITIES</div>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl text-[#F1F3F5] tracking-tight">
+          Built for End-to-End Execution
+        </h2>
+        <p class="text-sm sm:text-base text-[#949BA4] mt-3">
+          Whether auditing a Linux server cluster, flashing a corrupted SPI chip, or airbrushing a custom collector piece, every deliverable follows documented tolerances.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 rounded-[6px] bg-[#242931] border border-[#323944]">
+          <div class="font-mono text-xs text-[#00D1FF] mb-2">PHASE 01 // DIAGNOSTICS</div>
+          <h3 class="font-display font-bold text-lg text-[#F1F3F5] mb-2">Oscilloscope &amp; Packet Trace</h3>
+          <p class="text-sm text-[#949BA4] leading-relaxed">
+            Root-cause isolation using logic analyzers, thermal imaging, and deep packet/log inspection before a single line of code or solder joint is altered.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-[6px] bg-[#242931] border border-[#323944]">
+          <div class="font-mono text-xs text-[#00D1FF] mb-2">PHASE 02 // ARCHITECTURE</div>
+          <h3 class="font-display font-bold text-lg text-[#F1F3F5] mb-2">Hardened Code &amp; Firmware</h3>
+          <p class="text-sm text-[#949BA4] leading-relaxed">
+            Reproducible deployment scripts, hardened kernel parameters, and clean API integrations with zero bloatware or unverified dependencies.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-[6px] bg-[#242931] border border-[#323944]">
+          <div class="font-mono text-xs text-[#D97736] mb-2">PHASE 03 // SURFACE &amp; FINISH</div>
+          <h3 class="font-display font-bold text-lg text-[#F1F3F5] mb-2">Tactile Seal &amp; Presentation</h3>
+          <p class="text-sm text-[#949BA4] leading-relaxed">
+            Multi-stage surface prep, precision brushwork, matte protective topcoats, and clear technical handoff documentation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Interactive 'Precision Workbench' Brand Style Guide & Live Preview -->
+  <section id="brand-system" class="py-20 sm:py-24 border-b border-[#323944]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Header + Mode Switcher -->
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
+        <div>
+          <div class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-[#00D1FF] mb-2">
+            <span>03 // VISUAL IDENTITY SYSTEM</span>
+          </div>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-[#F1F3F5] tracking-tight">
+            The "Precision Workbench" Style Guide
+          </h2>
+          <p class="text-sm sm:text-base text-[#949BA4] mt-2 max-w-2xl">
+            Click any color swatch to copy its exact hex token to your clipboard, or toggle the live UI preview between <span class="text-[#F1F3F5] font-medium">Dark Mode (Workbench)</span> and <span class="text-[#D97736] font-medium">Light Mode (Spec Sheet)</span>.
+          </p>
+        </div>
+
+        <!-- Live Preview Mode Toggle -->
+        <div class="inline-flex p-1 rounded-[6px] bg-[#242931] border border-[#323944] self-start">
+          <button id="btn-mode-workbench" type="button" class="px-4 py-2 rounded-[4px] font-mono text-xs font-semibold bg-[#00D1FF] text-[#121417] transition-all">
+            Workbench (Dark)
+          </button>
+          <button id="btn-mode-spec" type="button" class="px-4 py-2 rounded-[4px] font-mono text-xs font-semibold text-[#949BA4] hover:text-[#F1F3F5] transition-all">
+            Spec Sheet (Light)
+          </button>
+        </div>
+      </div>
+
+      <!-- 60-30-10 Color Palette Grid (Click to Copy) -->
+      <div class="mb-14">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="font-display font-bold text-lg text-[#F1F3F5]">Color Tokens (60-30-10 Distribution)</h3>
+          <span class="font-mono text-xs text-[#949BA4]">CLICK SWATCH TO COPY HEX</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="palette-grid">
+          <!-- Swatch 1: Matte Obsidian -->
+          <button type="button" data-hex="#121417" data-name="Matte Obsidian" class="swatch-btn text-left group rounded-[6px] bg-[#242931] border border-[#323944] hover:border-[#00D1FF] p-4 transition-all flex items-center gap-4">
+            <div class="w-16 h-16 rounded-[5px] bg-[#121417] border border-[#323944] shrink-0 flex items-center justify-center">
+              <span class="font-mono text-[10px] text-[#949BA4]">60%</span>
+            </div>
+            <div class="min-w-0 flex-1">
+              <div class="flex items-center justify-between gap-2">
+                <span class="font-display font-bold text-base text-[#F1F3F5] truncate">Matte Obsidian</span>
+                <span class="font-mono text-xs text-[#00D1FF] group-hover:underline">#121417</span>
+              </div>
+              <p class="text-xs text-[#949BA4] mt-1">Dominant Canvas // Non-Glare Charcoal</p>
+            </div>
+          </button>
+
+          <!-- Swatch 2: Brushed Slate -->
+          <button type="button" data-hex="#242931" data-name="Brushed Slate" class="swatch-btn text-left group rounded-[6px] bg-[#242931] border border-[#323944] hover:border-[#00D1FF] p-4 transition-all flex items-center gap-4">
+            <div class="w-16 h-16 rounded-[5px] bg-[#242931] border border-[#949BA4]/40 shrink-0 flex items-center justify-center">
+              <span class="font-mono text-[10px] text-[#F1F3F5]">30%</span>
+            </div>
+            <div class="min-w-0 flex-1">
+              <div class="flex items-center justify-between gap-2">
+                <span class="font-display font-bold text-base text-[#F1F3F5] truncate">Brushed Slate</span>
+                <span class="font-mono text-xs text-[#00D1FF] group-hover:underline">#242931</span>
+              </div>
+              <p class="text-xs text-[#949BA4] mt-1">Secondary // Cards &amp; Structural Panels</p>
+            </div>
+          </button>
+
+          <!-- Swatch 3: Off-White Alabaster -->
+          <button type="button" data-hex="#F1F3F5" data-name="Off-White Alabaster" class="swatch-btn text-left group rounded-[6px] bg-[#242931] border border-[#323944] hover:border-[#00D1FF] p-4 transition-all flex items-center gap-4">
+            <div class="w-16 h-16 rounded-[5px] bg-[#F1F3F5] border border-[#323944] shrink-0 flex items-center justify-center">
+              <span class="font-mono text-[10px] text-[#121417] font-semibold">INK</span>
+            </div>
+            <div class="min-w-0 flex-1">
+              <div class="flex items-center justify-between gap-2">
+                <span class="font-display font-bold text-base text-[#F1F3F5] truncate">Off-White Alabaster</span>
+                <span class="font-mono text-xs text-[#00D1FF] group-hover:underline">#F1F3F5</span>
+              </div>
+              <p class="text-xs text-[#949BA4] mt-1">Primary Text &amp; Light Spec Background</p>
+            </div>
+          </button>
+
+          <!-- Swatch 4: Solder Silver -->
+          <button type="button" data-hex="#949BA4" data-name="Solder Silver" class="swatch-btn text-left group rounded-[6px] bg-[#242931] border border-[#323944] hover:border-[#00D1FF] p-4 transition-all flex items-center gap-4">
+            <div class="w-16 h-16 rounded-[5px] bg-[#949BA4] border border-[#323944] shrink-0 flex items-center justify-center">
+              <span class="font-mono text-[10px] text-[#121417] font-semibold">META</span>
+            </div>
+            <div class="min-w-0 flex-1">
+              <div class="flex items-center justify-between gap-2">
+                <span class="font-display font-bold text-base text-[#F1F3F5] truncate">Solder Silver</span>
+                <span class="font-mono text-xs text-[#00D1FF] group-hover:underline">#949BA4</span>
+              </div>
+              <p class="text-xs text-[#949BA4] mt-1">Muted Text, Specs &amp; Secondary Labels</p>
+            </div>
+          </button>
+
+          <!-- Swatch 5: Circuit Cyan -->
+          <button type="button" data-hex="#00D1FF" data-name="Circuit Cyan" class="swatch-btn text-left group rounded-[6px] bg-[#242931] border border-[#323944] hover:border-[#00D1FF] p-4 transition-all flex items-center gap-4">
+            <div class="w-16 h-16 rounded-[5px] bg-[#00D1FF] shrink-0 flex items-center justify-center">
+              <span class="font-mono text-[10px] text-[#121417] font-bold">10% A</span>
+            </div>
+            <div class="min-w-0 flex-1">
+              <div class="flex items-center justify-between gap-2">
+                <span class="font-display font-bold text-base text-[#F1F3F5] truncate">Circuit Cyan</span>
+                <span class="font-mono text-xs text-[#00D1FF] group-hover:underline">#00D1FF</span>
+              </div>
+              <p class="text-xs text-[#949BA4] mt-1">Primary Accent // Tech, Security &amp; CTAs</p>
+            </div>
+          </button>
+
+          <!-- Swatch 6: Copper Trace -->
+          <button type="button" data-hex="#D97736" data-name="Copper Trace" class="swatch-btn text-left group rounded-[6px] bg-[#242931] border border-[#323944] hover:border-[#D97736] p-4 transition-all flex items-center gap-4">
+            <div class="w-16 h-16 rounded-[5px] bg-[#D97736] shrink-0 flex items-center justify-center">
+              <span class="font-mono text-[10px] text-[#121417] font-bold">10% B</span>
+            </div>
+            <div class="min-w-0 flex-1">
+              <div class="flex items-center justify-between gap-2">
+                <span class="font-display font-bold text-base text-[#F1F3F5] truncate">Copper Trace</span>
+                <span class="font-mono text-xs text-[#D97736] group-hover:underline">#D97736</span>
+              </div>
+              <p class="text-xs text-[#949BA4] mt-1">Secondary Accent // Hardware &amp; Craft</p>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Live Interactive Preview Container + Typography Specimen -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Left 7 Cols: Live Component Preview Card (Switches between Workbench Dark & Spec Sheet Light) -->
+        <div id="live-preview-box" class="lg:col-span-7 rounded-[6px] p-6 sm:p-8 border transition-colors duration-300 bg-[#121417] border-[#323944] text-[#F1F3F5]">
+          <div class="flex items-center justify-between pb-4 mb-6 border-b border-[#323944]" id="preview-header-border">
+            <div class="flex items-center gap-2">
+              <span class="font-mono text-xs uppercase tracking-wider px-2 py-0.5 rounded-[4px] bg-[#D97736]/20 text-[#D97736] border border-[#D97736]/40">
+                LIVE SPEC PREVIEW
+              </span>
+              <span id="preview-mode-label" class="font-mono text-xs text-[#949BA4]">MODE: WORKBENCH DARK (#121417)</span>
+            </div>
+            <span class="font-mono text-xs text-[#00D1FF]">WCAG AA+</span>
+          </div>
+
+          <!-- Simulated Project Spec Card inside Preview -->
+          <div id="preview-inner-card" class="rounded-[5px] p-5 sm:p-6 bg-[#242931] border border-[#323944] transition-colors duration-300">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+              <span class="font-mono text-xs text-[#D97736] uppercase font-medium">BATCH #TW-2026-09 // CUSTOM CYBERDECK</span>
+              <span class="font-mono text-xs px-2 py-0.5 rounded-[4px] bg-[#00D1FF]/15 text-[#00D1FF]">VERIFIED</span>
+            </div>
+            <h4 id="preview-title" class="font-display font-bold text-xl sm:text-2xl text-[#F1F3F5] mb-2">
+              Hardened Linux Field Terminal &amp; Cerakote Shell
+            </h4>
+            <p id="preview-body" class="text-sm text-[#949BA4] leading-relaxed mb-5">
+              Custom CM4 carrier board flashed with signed kernel image, paired with a hand-weathered Copper Trace &amp; Matte Obsidian aluminum enclosure.
+            </p>
+            <div class="flex flex-wrap items-center gap-3">
+              <button type="button" onclick="showToast('Sample Primary Action triggered (#00D1FF)')" class="px-4 py-2 rounded-[5px] bg-[#00D1FF] text-[#121417] font-display font-bold text-xs sm:text-sm hover:opacity-90 transition-opacity">
+                Inspect Schematic
+              </button>
+              <span class="font-mono text-xs px-3 py-2 rounded-[5px] border border-[#D97736] text-[#D97736]">
+                FINISH: SATIN PATINA
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right 5 Cols: Typography Hierarchy Specimen -->
+        <div class="lg:col-span-5 rounded-[6px] bg-[#242931] border border-[#323944] p-6 sm:p-8 flex flex-col justify-between space-y-6">
+          <div>
+            <div class="font-mono text-xs text-[#949BA4] uppercase tracking-wider mb-4">TYPOGRAPHY HIERARCHY</div>
+            
+            <div class="space-y-5">
+              <div class="pb-4 border-b border-[#323944]">
+                <div class="flex items-center justify-between font-mono text-[11px] text-[#00D1FF] mb-1">
+                  <span>DISPLAY / HEADINGS</span>
+                  <span>Space Grotesk (600/700)</span>
+                </div>
+                <div class="font-display font-bold text-2xl text-[#F1F3F5] tracking-tight">
+                  Engineered Precision
+                </div>
+              </div>
+
+              <div class="pb-4 border-b border-[#323944]">
+                <div class="flex items-center justify-between font-mono text-[11px] text-[#00D1FF] mb-1">
+                  <span>BODY / UI COPY</span>
+                  <span>Inter (400/500/600)</span>
+                </div>
+                <p class="font-sans text-sm text-[#F1F3F5]/90 leading-relaxed">
+                  Clean, neutral legibility engineered for technical documentation, diagnostics, and client reports.
+                </p>
+              </div>
+
+              <div>
+                <div class="flex items-center justify-between font-mono text-[11px] text-[#D97736] mb-1">
+                  <span>SPECS / TELEMETRY</span>
+                  <span>JetBrains Mono (400/500)</span>
+                </div>
+                <div class="font-mono text-xs text-[#949BA4] bg-[#121417] p-3 rounded-[4px] border border-[#323944]">
+                  0x00D1FF :: SHA256_OK // TOLERANCE ±0.02mm
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Project Inquiry / Contact Form -->
+  <section id="contact" class="py-20 sm:py-24 bg-[#15181C]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <div class="font-mono text-xs uppercase tracking-widest text-[#00D1FF] mb-2">04 // INITIATE ENGAGEMENT</div>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl text-[#F1F3F5] tracking-tight">
+          Start a Project on the Workbench
+        </h2>
+        <p class="text-sm sm:text-base text-[#949BA4] mt-3 max-w-xl mx-auto">
+          Select a primary discipline below and outline your technical specs, security goals, hardware issue, or custom finishing concept.
+        </p>
+      </div>
+
+      <div class="rounded-[6px] bg-[#242931] border border-[#323944] p-6 sm:p-10 shadow-xl">
+        <form id="project-form" class="space-y-6">
+          <!-- Category Selector Pills -->
+          <div>
+            <label class="block font-mono text-xs uppercase tracking-wider text-[#949BA4] mb-3">
+              Select Discipline Category *
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3" id="category-selector">
+              <button type="button" data-category="Cybersecurity" class="cat-btn active-cat px-3 py-3 rounded-[5px] border border-[#00D1FF] bg-[#00D1FF]/15 text-[#F1F3F5] font-mono text-xs font-medium text-left flex items-center justify-between transition-all">
+                <span>Cybersecurity</span>
+                <span class="w-2 h-2 rounded-full bg-[#00D1FF]"></span>
+              </button>
+              <button type="button" data-category="Software / Embedded" class="cat-btn px-3 py-3 rounded-[5px] border border-[#323944] bg-[#121417] text-[#949BA4] hover:text-[#F1F3F5] font-mono text-xs font-medium text-left flex items-center justify-between transition-all">
+                <span>Software / Embedded</span>
+                <span class="w-2 h-2 rounded-full bg-transparent"></span>
+              </button>
+              <button type="button" data-category="Hardware Repair" class="cat-btn px-3 py-3 rounded-[5px] border border-[#323944] bg-[#121417] text-[#949BA4] hover:text-[#F1F3F5] font-mono text-xs font-medium text-left flex items-center justify-between transition-all">
+                <span>Hardware Repair</span>
+                <span class="w-2 h-2 rounded-full bg-transparent"></span>
+              </button>
+              <button type="button" data-category="Custom Finish / Artisanal" class="cat-btn px-3 py-3 rounded-[5px] border border-[#323944] bg-[#121417] text-[#949BA4] hover:text-[#F1F3F5] font-mono text-xs font-medium text-left flex items-center justify-between transition-all">
+                <span>Custom Finish</span>
+                <span class="w-2 h-2 rounded-full bg-transparent"></span>
+              </button>
+            </div>
+            <input type="hidden" id="selected-category" name="category" value="Cybersecurity" style="">
+          </div>
+
+          <!-- Name & Email Row -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label for="client-name" class="block font-mono text-xs uppercase tracking-wider text-[#949BA4] mb-2">
+                Your Name / Callsign *
+              </label>
+              <input type="text" id="client-name" required="" placeholder="Alex Mercer" class="w-full px-4 py-3 rounded-[5px] bg-[#121417] border border-[#323944] text-[#F1F3F5] placeholder-[#949BA4]/50 text-sm focus:outline-none focus:border-[#00D1FF] transition-colors" style="">
+            </div>
+            <div>
+              <label for="client-email" class="block font-mono text-xs uppercase tracking-wider text-[#949BA4] mb-2">
+                Return Email *
+              </label>
+              <input type="email" id="client-email" required="" placeholder="alex@domain.com" class="w-full px-4 py-3 rounded-[5px] bg-[#121417] border border-[#323944] text-[#F1F3F5] placeholder-[#949BA4]/50 text-sm focus:outline-none focus:border-[#00D1FF] transition-colors" style="">
+            </div>
+          </div>
+
+          <!-- Project Scope / Message -->
+          <div>
+            <label for="project-details" class="block font-mono text-xs uppercase tracking-wider text-[#949BA4] mb-2">
+              Project Specifications &amp; Goals *
+            </label>
+            <textarea id="project-details" rows="4" required="" placeholder="Describe your target system, hardware model, security scope, or custom paint/finish requirements..." class="w-full px-4 py-3 rounded-[5px] bg-[#121417] border border-[#323944] text-[#F1F3F5] placeholder-[#949BA4]/50 text-sm focus:outline-none focus:border-[#00D1FF] transition-colors" style=""></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2">
+            <span class="font-mono text-xs text-[#949BA4]">
+              AVG RESPONSE: &lt; 24 HRS // HOUSTON, TX
+            </span>
+            <button type="submit" class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-[5px] bg-[#00D1FF] text-[#121417] font-display font-bold text-sm sm:text-base hover:bg-[#33DBFF] transition-all shadow-[0_0_20px_rgba(0,209,255,0.2)]">
+              <span>Transmit Inquiry</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </button>
+          </div>
+        </form>
+
+        <!-- Post-Submission Confirmation Panel (Hidden until submitted) -->
+        <div id="form-confirmation" class="hidden rounded-[5px] bg-[#121417] border border-[#00D1FF] p-6 text-center space-y-3">
+          <div class="w-12 h-12 rounded-full bg-[#00D1FF]/15 text-[#00D1FF] flex items-center justify-center mx-auto">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M5 13l4 4L19 7"></path>
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-xl text-[#F1F3F5]">Work Order Logged</h3>
+          <p id="confirmation-summary" class="text-sm text-[#949BA4] max-w-md mx-auto"></p>
+          <div class="pt-2">
+            <button id="reset-form-btn" type="button" class="px-4 py-2 rounded-[5px] bg-[#242931] border border-[#323944] text-xs font-mono text-[#F1F3F5] hover:border-[#00D1FF] transition-colors">
+              Submit Another Request
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Footer -->
+  <footer class="bg-[#121417] border-t border-[#323944] py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <span class="font-display font-bold text-sm text-[#F1F3F5]">TRACEWORKS STUDIO</span>
+        <span class="text-[#323944]">|</span>
+        <span class="font-mono text-xs text-[#949BA4]">HOUSTON, TX (29.7604° N, 95.3698° W)</span>
+      </div>
+
+      <div class="flex items-center gap-2 font-mono text-xs text-[#949BA4]">
+        <span class="w-2 h-2 rounded-full bg-[#00D1FF]"></span>
+        <span>ALL BENCH SYSTEMS NOMINAL</span>
+      </div>
+
+      <div class="font-mono text-xs text-[#949BA4]">
+        © 2026 TRACEWORKS STUDIO. ALL RIGHTS RESERVED.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Script -->
+  <script>
+    // 1. Toast Notification Helper (Replaces alert)
+    function showToast(message, accent = 'cyan') {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      const borderColor = accent === 'copper' ? 'border-[#D97736]' : 'border-[#00D1FF]';
+      const dotColor = accent === 'copper' ? 'bg-[#D97736]' : 'bg-[#00D1FF]';
+
+      toast.className = `pointer-events-auto flex items-center gap-3 px-4 py-3 rounded-[5px] bg-[#242931] border ${borderColor} text-[#F1F3F5] shadow-2xl font-mono text-xs transition-all duration-300 transform translate-y-2 opacity-0`;
+      toast.innerHTML = `
+        <span class="w-2 h-2 rounded-full ${dotColor} shrink-0"></span>
+        <span>${message}</span>
+      `;
+      container.appendChild(toast);
+
+      requestAnimationFrame(() => {
+        toast.classList.remove('translate-y-2', 'opacity-0');
+      });
+
+      setTimeout(() => {
+        toast.classList.add('translate-y-2', 'opacity-0');
+        setTimeout(() => toast.remove(), 300);
+      }, 2800);
+    }
+
+    // 2. Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('menu-icon-open');
+    const iconClose = document.getElementById('menu-icon-close');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.toggle('hidden');
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        iconOpen.classList.remove('hidden');
+        iconClose.classList.add('hidden');
+      });
+    });
+
+    // 3. Interactive Diagnostic Readout Widget
+    const diagData = {
+      sec: {
+        lines: [
+          { tag: '[OK]', color: '#00D1FF', text: 'ZERO-TRUST PERIMETER: ENFORCED (WG-TUNNEL0)' },
+          { tag: '[OK]', color: '#00D1FF', text: 'KERNEL HARDENING: KASLR + SECCOMP ACTIVE' },
+          { tag: '[SCAN]', color: '#949BA4', text: '0 CRITICAL CVEs DETECTED ON ENDPOINT AUDIT' },
+          { tag: '[HASH]', color: '#F1F3F5', text: 'SHA256: 9f86d081884c7d659a2feaa0c55ad015' }
+        ],
+        baud: 'SEC-MON // TLS 1.3 STRICT'
+      },
+      sys: {
+        lines: [
+          { tag: '[SYS]', color: '#00D1FF', text: 'LINUX 6.8 RT-PREEMPT // PYTHON 3.12 DAEMON' },
+          { tag: '[GPIO]', color: '#00D1FF', text: 'RPI-CM4 I2C / SPI BUS TELEMETRY: 1000Hz' },
+          { tag: '[API]', color: '#949BA4', text: 'LOCAL AUTOMATION PIPELINE: 14ms LATENCY' },
+          { tag: '[MEM]', color: '#F1F3F5', text: 'ALLOC: 128MB / 4096MB // ZERO LEAKS' }
+        ],
+        baud: 'UART0 // 115200 BAUD OK'
+      },
+      hw: {
+        lines: [
+          { tag: '[RAIL]', color: '#D97736', text: 'VCORE: 1.102V | 3V3_AUX: 3.301V | 5V: 5.01V' },
+          { tag: '[SPI]', color: '#D97736', text: 'WINBOND 25Q128 EEPROM DUMP VERIFIED' },
+          { tag: '[THERM]', color: '#949BA4', text: 'IR REWORK STATION: 365°C // FLUX CLEAN' },
+          { tag: '[PASS]', color: '#00D1FF', text: 'CONTINUITY & IMPEDANCE WITHIN ±1%' }
+        ],
+        baud: 'JTAG // SWD LINK LOCKED'
+      },
+      craft: {
+        lines: [
+          { tag: '[COAT]', color: '#D97736', text: 'PRIMER: MATTE OBSIDIAN URETHANE BASE' },
+          { tag: '[TRIM]', color: '#D97736', text: 'HAND-BRUSHED COPPER TRACE METALLIC EDGE' },
+          { tag: '[SEAL]', color: '#949BA4', text: '2K SATIN CLEARCOAT // CURED 24H @ 22°C' },
+          { tag: '[QC]', color: '#00D1FF', text: 'SURFACE MICRON INSPECTION: FLAWLESS' }
+        ],
+        baud: 'ATELIER // HUMIDITY 42%'
+      }
+    };
+
+    let currentDiag = 'sec';
+    const diagScreen = document.getElementById('diag-screen');
+    const diagTimestamp = document.getElementById('diag-timestamp');
+
+    function renderDiag(key) {
+      currentDiag = key;
+      const payload = diagData[key];
+      diagScreen.innerHTML = payload.lines.map(item => `
+        <div class="flex items-start gap-2.5">
+          <span style="color: ${item.color}" class="font-semibold shrink-0">${item.tag}</span>
+          <span class="text-[#F1F3F5]/90 break-all">${item.text}</span>
+        </div>
+      `).join('') + `
+        <div class="pt-3 mt-2 border-t border-[#323944]/70 text-[#949BA4] flex items-center gap-2">
+          <span class="text-[#00D1FF]">&gt;</span>
+          <span>ready_for_bench_command<span class="animate-pulse">_</span></span>
+        </div>
+      `;
+      diagTimestamp.textContent = payload.baud;
+
+      document.querySelectorAll('.diag-tab').forEach(tab => {
+        const isSelected = tab.dataset.diag === key;
+        tab.classList.toggle('border-[#00D1FF]', isSelected);
+        tab.classList.toggle('text-[#00D1FF]', isSelected);
+        tab.classList.toggle('bg-[#242931]/60', isSelected);
+        tab.classList.toggle('border-transparent', !isSelected);
+        tab.classList.toggle('text-[#949BA4]', !isSelected);
+      });
+    }
+
+    document.querySelectorAll('.diag-tab').forEach(tab => {
+      tab.addEventListener('click', () => renderDiag(tab.dataset.diag));
+    });
+
+    document.getElementById('run-diag-btn').addEventListener('click', () => {
+      diagScreen.innerHTML = `<div class="text-[#00D1FF] animate-pulse">&gt; Probing subsystem [${currentDiag.toUpperCase()}]...</div>`;
+      setTimeout(() => {
+        renderDiag(currentDiag);
+        showToast(`Subsystem [${currentDiag.toUpperCase()}] probe verified`);
+      }, 320);
+    });
+
+    renderDiag('sec');
+
+    // 4. Click-to-Copy Hex Swatches (Using execCommand fallback for iFrame safety)
+    function copyTextToClipboard(text) {
+      const tempInput = document.createElement('textarea');
+      tempInput.value = text;
+      tempInput.style.position = 'fixed';
+      tempInput.style.opacity = '0';
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      try {
+        document.execCommand('copy');
+      } catch (err) {
+        // Fallback handled silently
+      }
+      document.body.removeChild(tempInput);
+    }
+
+    document.querySelectorAll('.swatch-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const hex = btn.dataset.hex;
+        const name = btn.dataset.name;
+        copyTextToClipboard(hex);
+        const accentType = hex === '#D97736' ? 'copper' : 'cyan';
+        showToast(`Copied ${name} (${hex}) to clipboard`, accentType);
+      });
+    });
+
+    // 5. Live Brand System Mode Toggle (Workbench Dark vs Spec Sheet Light)
+    const btnWorkbench = document.getElementById('btn-mode-workbench');
+    const btnSpec = document.getElementById('btn-mode-spec');
+    const previewBox = document.getElementById('live-preview-box');
+    const previewInnerCard = document.getElementById('preview-inner-card');
+    const previewTitle = document.getElementById('preview-title');
+    const previewBody = document.getElementById('preview-body');
+    const previewModeLabel = document.getElementById('preview-mode-label');
+    const previewHeaderBorder = document.getElementById('preview-header-border');
+
+    btnWorkbench.addEventListener('click', () => {
+      btnWorkbench.className = 'px-4 py-2 rounded-[4px] font-mono text-xs font-semibold bg-[#00D1FF] text-[#121417] transition-all';
+      btnSpec.className = 'px-4 py-2 rounded-[4px] font-mono text-xs font-semibold text-[#949BA4] hover:text-[#F1F3F5] transition-all';
+
+      previewBox.className = 'lg:col-span-7 rounded-[6px] p-6 sm:p-8 border transition-colors duration-300 bg-[#121417] border-[#323944] text-[#F1F3F5]';
+      previewInnerCard.className = 'rounded-[5px] p-5 sm:p-6 bg-[#242931] border border-[#323944] transition-colors duration-300';
+      previewTitle.className = 'font-display font-bold text-xl sm:text-2xl text-[#F1F3F5] mb-2';
+      previewBody.className = 'text-sm text-[#949BA4] leading-relaxed mb-5';
+      previewHeaderBorder.className = 'flex items-center justify-between pb-4 mb-6 border-b border-[#323944]';
+      previewModeLabel.textContent = 'MODE: WORKBENCH DARK (#121417)';
+      previewModeLabel.className = 'font-mono text-xs text-[#949BA4]';
+    });
+
+    btnSpec.addEventListener('click', () => {
+      btnSpec.className = 'px-4 py-2 rounded-[4px] font-mono text-xs font-semibold bg-[#D97736] text-[#121417] transition-all';
+      btnWorkbench.className = 'px-4 py-2 rounded-[4px] font-mono text-xs font-semibold text-[#949BA4] hover:text-[#F1F3F5] transition-all';
+
+      previewBox.className = 'lg:col-span-7 rounded-[6px] p-6 sm:p-8 border transition-colors duration-300 bg-[#F1F3F5] border-[#CBD2D9] text-[#121417]';
+      previewInnerCard.className = 'rounded-[5px] p-5 sm:p-6 bg-white border border-[#D8DEE4] shadow-sm transition-colors duration-300';
+      previewTitle.className = 'font-display font-bold text-xl sm:text-2xl text-[#121417] mb-2';
+      previewBody.className = 'text-sm text-[#4A525D] leading-relaxed mb-5';
+      previewHeaderBorder.className = 'flex items-center justify-between pb-4 mb-6 border-b border-[#D8DEE4]';
+      previewModeLabel.textContent = 'MODE: SPEC SHEET LIGHT (#F1F3F5)';
+      previewModeLabel.className = 'font-mono text-xs text-[#4A525D]';
+    });
+
+    // 6. Contact Form Category Selector & Submission Handling
+    const catButtons = document.querySelectorAll('.cat-btn');
+    const selectedCategoryInput = document.getElementById('selected-category');
+
+    catButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const cat = btn.dataset.category;
+        selectedCategoryInput.value = cat;
+        const isCraftOrHw = cat.includes('Hardware') || cat.includes('Finish');
+        const activeBorder = isCraftOrHw ? 'border-[#D97736]' : 'border-[#00D1FF]';
+        const activeBg = isCraftOrHw ? 'bg-[#D97736]/15' : 'bg-[#00D1FF]/15';
+        const dotBg = isCraftOrHw ? 'bg-[#D97736]' : 'bg-[#00D1FF]';
+
+        catButtons.forEach(b => {
+          b.className = 'cat-btn px-3 py-3 rounded-[5px] border border-[#323944] bg-[#121417] text-[#949BA4] hover:text-[#F1F3F5] font-mono text-xs font-medium text-left flex items-center justify-between transition-all';
+          b.querySelector('span:last-child').className = 'w-2 h-2 rounded-full bg-transparent';
+        });
+
+        btn.className = `cat-btn px-3 py-3 rounded-[5px] border ${activeBorder} ${activeBg} text-[#F1F3F5] font-mono text-xs font-medium text-left flex items-center justify-between transition-all`;
+        btn.querySelector('span:last-child').className = `w-2 h-2 rounded-full ${dotBg}`;
+      });
+    });
+
+    const projectForm = document.getElementById('project-form');
+    const formConfirmation = document.getElementById('form-confirmation');
+    const confirmationSummary = document.getElementById('confirmation-summary');
+    const resetFormBtn = document.getElementById('reset-form-btn');
+
+    projectForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('client-name').value.trim();
+      const email = document.getElementById('client-email').value.trim();
+      const category = selectedCategoryInput.value;
+
+      projectForm.classList.add('hidden');
+      formConfirmation.classList.remove('hidden');
+      confirmationSummary.textContent = `Thank you, ${name}. Your [${category}] inquiry has been queued on the Traceworks bench. A confirmation receipt has been routed to ${email}.`;
+      showToast(`Inquiry logged under [${category}]`);
+    });
+
+    resetFormBtn.addEventListener('click', () => {
+      projectForm.reset();
+      formConfirmation.classList.add('hidden');
+      projectForm.classList.remove('hidden');
+    });
+  </script>
+
+</body></html>
