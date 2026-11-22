@@ -953,16 +953,46 @@
     const confirmationSummary = document.getElementById('confirmation-summary');
     const resetFormBtn = document.getElementById('reset-form-btn');
 
-    projectForm.addEventListener('submit', (e) => {
+    projectForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const name = document.getElementById('client-name').value.trim();
       const email = document.getElementById('client-email').value.trim();
+      const details = document.getElementById('project-details').value.trim();
       const category = selectedCategoryInput.value;
+      const submitBtn = projectForm.querySelector('button[type="submit"]');
+      const btnLabel = submitBtn.querySelector('span');
+      const originalLabel = btnLabel.textContent;
+      submitBtn.disabled = true;
+      btnLabel.textContent = 'Transmitting...';
 
-      projectForm.classList.add('hidden');
-      formConfirmation.classList.remove('hidden');
-      confirmationSummary.textContent = `Thank you, ${name}. Your [${category}] inquiry has been queued on the Traceworks bench. A confirmation receipt has been routed to ${email}.`;
-      showToast(`Inquiry logged under [${category}]`);
+      try {
+        const res = await fetch('https://formsubmit.co/ajax/albertmescamilla@gmail.com', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({
+            _subject: `New Traceworks inquiry: ${category} from ${name}`,
+            _template: 'table',
+            _captcha: 'false',
+            _replyto: email,
+            name: name,
+            email: email,
+            category: category,
+            details: details
+          })
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok || String(data.success) === 'false') throw new Error(data.message || 'Send failed');
+
+        projectForm.classList.add('hidden');
+        formConfirmation.classList.remove('hidden');
+        confirmationSummary.textContent = `Thank you, ${name}. Your [${category}] inquiry has been received. We'll reply to ${email} within 24 hours.`;
+        showToast(`Inquiry logged under [${category}]`);
+      } catch (err) {
+        showToast('Transmission failed. Please try again or email albertmescamilla@gmail.com.');
+      } finally {
+        submitBtn.disabled = false;
+        btnLabel.textContent = originalLabel;
+      }
     });
 
     resetFormBtn.addEventListener('click', () => {
